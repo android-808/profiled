@@ -2,16 +2,16 @@ Source: profiled
 Section: misc
 Priority: optional
 Maintainer: Simo Piiroinen <simo.piiroinen@nokia.com>
-Build-Depends: debhelper (>= 4.1.0),
+Build-Depends: debhelper (>= 9),
  libdbus-1-dev,
  libdbus-glib-1-dev,
  libglib2.0-dev,
  doxygen
-Standards-Version: 3.7.2
+Standards-Version: 3.9.2
 
 Package: profiled
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, profiled-settings-default (>= ${binary:Version})
 Description: profile daemon, manages user settings
  Gets default set of settings from profile data packages
  that are installed on the device.
@@ -31,9 +31,18 @@ Description: debug symbols for profiled
  This package contains debug information for profiled,
  useful for debugging tools like gdb.
 
+Package: profiled-settings-default
+Section: libs
+Priority: extra
+Architecture: any
+Depends: profiled (= ${binary:Version})
+Provides: profiled-settings
+Description: default settings for profiled
+ Default settings for profiled.
+
 Package: profileclient
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: command line test tool for profiled
  The profileclient tool can be used to query/change
  profiles and profile values.

@@ -1,0 +1,3 @@
+debian/tmp/usr/include/profiled/*
+debian/tmp/usr/lib/libprofile.so
+debian/tmp/usr/lib/pkgconfig/profile.pc

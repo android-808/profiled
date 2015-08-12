@@ -1,0 +1,9 @@
+profiled_1.0.2_amd64.deb misc optional
+profiled-dbg_1.0.2_amd64.deb devel extra
+profiled-settings-default_1.0.2_amd64.deb libs extra
+profileclient_1.0.2_amd64.deb misc optional
+profileclient-dbg_1.0.2_amd64.deb devel extra
+libprofile0_1.0.2_amd64.deb libs optional
+libprofile0-dbg_1.0.2_amd64.deb libdevel extra
+libprofile-dev_1.0.2_amd64.deb libdevel optional
+libprofile-doc_1.0.2_all.deb doc optional
