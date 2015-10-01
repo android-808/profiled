@@ -36,7 +36,7 @@ Section: libs
 Priority: extra
 Architecture: any
 Depends: profiled (= ${binary:Version})
-Provides: profiled-settings
+Provides: profiled-settings, profile-data
 Description: default settings for profiled
  Default settings for profiled.
 
